@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: 0.5s;
+    &.toggleBlanco{
+       background-color:aliceblue ;
+   }
+}
+#toggle {
+    height: 160px;
+    width: 320px;
+    background: #1b1b1b;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0,0.1),
+                inset 0 8px 8px rgba(215, 163, 163, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0,0.1);
+   position: relative;
+   border: none;
+   cursor: pointer;
+   transition: 0.5s;
+   appearance: none;
+   border-radius: 160px;
+   &.toggleBlanco{
+       background-color:aliceblue ;
+       box-shadow: inset 0 2px 60px  rgba(0, 0, 0,0.1),
+                   inset 0 2px 8px rgba(0,0,0,0.1),
+                   inset 0 -4px 4px rgba(0,0,0,0.05);
+   .circulo{
+    left: 160px;
+    box-shadow: 0 8px 2px rgba(0, 0, 0,0.1),
+            inset 4px 4px rgb(84, 215, 215),
+            inset -4px 4px rgb(187, 238, 238);
+            background: linear-gradient(to bottom, aliceblue,#fafafa);
+
+
+   }
+   }
+}
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    content: "";
+    background: linear-gradient(to bottom,#444,#222);
+    border-radius: 50vh;
+    transform: scale(0.9);
+    transition:0.5s;
+    box-shadow: 0 8px 40px rgba(0, 0, 0,0.5),
+                inset 4px 4px rgba(255,255,255,0.2),
+                inset -4px 4px rgba(255,255,255,0.2),
+    
+}
